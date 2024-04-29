@@ -1,0 +1,1 @@
+<a class="w-full  text-white font-bold text-l md:text-xl flex items-center hover:text-gray-300 pl-10 pr-10" href="<?php echo isset($content['a']) ? $content['a']['href'] : ''; ?>"><?php echo isset($content['a']) ? $content['a']['text'] : '<!-- missing a content -->'; ?></a>

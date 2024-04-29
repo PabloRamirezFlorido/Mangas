@@ -1,0 +1,5 @@
+From: no-reply@10.34.15.91
+Reply-To: no-reply@10.34.15.91
+X-Mailer: PHP/8.2.12
+Recuperar contraseña
+Para recuperar tu contraseña, haz clic en el siguiente enlace: http://10.34.15.91/?page=forgpasswreset&action=reset_form&token=5b5b6060d14e65a2f17abaf419bb6be642d1d3c275dd1ed5aa1506da319c0f97
