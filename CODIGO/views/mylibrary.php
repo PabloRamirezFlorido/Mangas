@@ -22,6 +22,7 @@ include_once 'partials/header.php';
                 $manga_img = $book['manga_img'];
                 $manga_description = $book['manga_description'];
                 $manga_liked = $book['liked'];
+                $total_likes = $book['total_likes'];
             ?>
                 <?php
                     if ($manga_liked) {
@@ -48,14 +49,18 @@ include_once 'partials/header.php';
                                 ?>
                                     <input type="hidden" name="action" value="unlike">
                                     <button type="submit" class="inline-flex items-center px-3 px-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-red-600">
-                                        ❤
+                                        <?php
+                                        echo (int)$total_likes; 
+                                        ?>   ❤
                                     </button>
                                 <?php
                                 } else {
                                 ?>
                                     <input type="hidden" name="action" value="like">
                                     <button type="submit" class="inline-flex items-center px-3 px-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-green-600">
-                                        ❤
+                                        <?php
+                                        echo (int)$total_likes; 
+                                        ?>   ❤
                                     </button>
                                 <?php
                                 }

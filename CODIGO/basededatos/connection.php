@@ -157,6 +157,19 @@ function forgpasswDeleteToken($db, $token) {
 }
 
 /**
+ * @brief Función que guarda un nuevo registro en la base de datos.
+ * @param $db Conexión a la base de datos.
+ * @param $usuario_id id del usuario.
+ * @return void
+ */
+function savenewRegister($db, $name, $password, $email) {
+    $stmt = $db->prepare('INSERT into usuarios (usuario_name, usuario_password, usuario_email) VALUES (?, ?, ?)');
+    $stmt->bind_param('sss', $name, $password, $email);
+    $stmt->execute();
+    return getUserByEmail($db, $email);
+}
+
+/**
  * @brief Función que obtiene la lista de mangas de la base de datos.
  * @param $db Conexión a la base de datos.
  * @return array associativo array del manga o un array vacío si no se encuentra.

@@ -128,11 +128,6 @@ insert into usuarios(
     usuario_password, 
     usuario_email
     )
-values(
-    'Teo', 
-    '$2y$10$RVR8Mvz8wpJ6cgikyiCQauof//sQ0Ck2iap0G2aa8sEXABr1grElq',
-    'tedmasterweb@gmail.com'
-);
 
 /*
 Aqui añadimos los datos a la base de datos para la tabla manga

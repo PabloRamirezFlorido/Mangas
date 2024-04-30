@@ -13,8 +13,8 @@
 
     ?>
 </div>
-<input type="hidden" name="page" value="login">
-<input type="hidden" name="action" value="login">
+<input type="hidden" name="page" value="register">
+<input type="hidden" name="action" value="register">
 <div class="">
     <label for="name" class="block text-black w-full text-center">Usuario</label>
     <input type="text" name="name" id="name" value="" class="w-full px-3 py-2 text-center border rounded-md" required>
@@ -29,13 +29,13 @@
 </div><br>
 <div class="">
     <label for="password" class="block text-black w-full text-center">Repita contraseña</label>
-    <input type="password" name="password" id="password" value="" class="w-full px-3 py-2 text-center border rounded-md" required>
+    <input type="password" name="password2" id="password2" value="" class="w-full px-3 py-2 text-center border rounded-md" required>
 </div><br>
 <div class="w-full text-center flex justify-center">
     <div class="flex items-center h-5">
       <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
     </div>
-    <label for="remember" class="ms-2 text-sm pl-2 font-medium text-gray-900 dark:text-gray-300">Acepta los terminos y condiciones</label>
+    <label for="remember" class="ms-2 text-sm pl-2 font-medium text-gray-900 dark:text-gray-300">Acepta los términos y condiciones</label>
   </div>
   <br>
 <div class="w-full text-center flex justify-center">
@@ -46,7 +46,7 @@ include('partials/form.php');
 ?>
 </div>
 <div class="w-full text-center flex justify-center">
-    <a href="/?=login" class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+    <a href="/?page=login" class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
         ¿Ya tiene cuenta? Inicie sesión aquí
     </a>
 </div>

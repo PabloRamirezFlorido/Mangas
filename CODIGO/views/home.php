@@ -22,6 +22,7 @@ error_reporting(0);
                 $manga_img = $book['manga_img'];
                 $manga_description = $book['manga_description'];
                 $manga_liked = $book['liked'];
+                $total_likes = $book['total_likes'];
             ?>
                 <div class="max-w-sm bd-white bg-teal-400 border border-black-500 rounded-lg shadow">
                     <h5 class="font-bold text-gray-500 text-3xl text-center dark:text-gray-400 pt-10">
@@ -45,14 +46,19 @@ error_reporting(0);
                                 ?>
                                     <input type="hidden" name="action" value="unlike">
                                     <button type="submit" class="inline-flex items-center px-3 px-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-red-600">
-                                        ❤
+                                        <?php
+                                        echo (int)$total_likes; 
+                                        ?>
+                                           ❤
                                     </button>
                                 <?php
                                 } else {
                                 ?>
                                     <input type="hidden" name="action" value="like">
                                     <button type="submit" class="inline-flex items-center px-3 px-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-green-600">
-                                        ❤
+                                        <?php
+                                        echo (int)$total_likes; 
+                                        ?>  ❤
                                     </button>
                                 <?php
                                 }
