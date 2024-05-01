@@ -1,8 +1,8 @@
 Login loginShow, loginLogin, loginLogout
     Actions
-        - show (display the login form)
-        - login (process the login form)
-        - logout (logout the user)
+        - show (enseña el login form)
+        - login (procesa el login form)
+        - logout (logout el user)
     Fields
         - email
         - password
@@ -19,15 +19,15 @@ Login loginShow, loginLogin, loginLogout
     Image(logo)
     name field and label
     password field and label
-    Enter button
+    Poner button
         Register link
         Forgotten password link
 
 
 Register
     Actions
-        - show (display the register form)
-        - register (process the register form)
+        - show (enseña el register form)
+        - register (procesa el register form)
     Fields
         - name
         - email
@@ -48,8 +48,8 @@ Register
 
 Forgotten password (recover password)
     Actions
-        - show (display the recover password form)
-        - recover (process the recover password form)
+        - show (enseña el recover password form)
+        - recover (procesa el recover password form)
     Fields
         - email
     Validation
@@ -60,10 +60,10 @@ Forgotten password (recover password)
         - recover (form)
 
 
-Reset password (shown when following link from email)
+Reset password (se enseña despues del link del email)
     Actions
-        - show (display the reset password form)
-        - reset (process the reset password form)
+        - show (enseña el reset password form)
+        - reset (procesa el reset password form)
     Fields
         - password
         - repeat password
@@ -76,7 +76,7 @@ Reset password (shown when following link from email)
         - reset (form)
 
 
-Recover password email notification (technically, a view displayed in an email)
+Recover password email notification (tecnicamente, una view que aparece en un email)
     Fields
         - reset link
     Views
@@ -85,7 +85,7 @@ Recover password email notification (technically, a view displayed in an email)
 
 Menubar
     Actions
-        - show (display the menubar)
+        - show (enseña el menubar)
     Fields
         - user
     Views
@@ -101,7 +101,7 @@ Menubar
 
 Homepage
     Actions
-        - show (display the homepage)
+        - show (enseña el homepage)
     Fields
         - welcome message
         - latest books
@@ -112,8 +112,8 @@ Homepage
 
 Profile page
     Actions
-        - show (display the profile page)
-        - update (process the update profile form)
+        - show (enseña el profile page)
+        - update (procesa el update profile form)
     Fields
         - name
         - email
@@ -127,7 +127,7 @@ Profile page
 
 Book List page(libreria)
     Actions
-        - show (display the book list page)
+        - show (enseña el book list page)
     Fields
         - books
     Views
@@ -135,29 +135,29 @@ Book List page(libreria)
 
 Book Details page
     Actions
-        - show (display the book details page)
-        - like (process the like button)
+        - show (enseña el book details page)
+        - like (procesa el like button)
     Fields
         - image
         - description
         - title
         - isbn
-        - other details
+        - otros detalles
         - like button
     Views
         - image
         - description
         - title
         - isbn
-        - other details
+        - otros detalles
         - like button
 
 
 
 Mylibrary (liked books)
     Actions
-        - show (display the mylibrary page)
-        - unlike (process the unlike button)
+        - show (enseña el mylibrary page)
+        - unlike (procesa el unlike button)
     Fields
         - books
     Views
